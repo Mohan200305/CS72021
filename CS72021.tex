@@ -119,6 +119,11 @@ Q.7. Let p and q be two proportions. Consider the following two formulae in prop
 S1: $(\neg{p}\land({p}\lor{q})) \longrightarrow q$\\
 S2: $q \longrightarrow (\neg{p}\land({p}\lor{q}))$
 \end{center}
+S1 and S2 expressions in terms of boolean logic\\
+S1: $p'(p+q) \longrightarrow q = (p'(p+q))'+
+q$\\
+S2: $q \longrightarrow p'(p+q) = q'+p'(p+q)
+$\\
 Which one of the following choices is correct?
 
 \begin{enumerate}
@@ -214,7 +219,9 @@ Therefore the expression S1 becomes as\\
 S1: $(\neg{A} \land({A}\lor{B})) \longrightarrow B = \neg((\neg{A} \land({A}\lor{B})))\lor{B}$\\
 The boolean expression for the propositional expression can be written as:\\
 S1: $A'(A+B) \longrightarrow B = (A'(A+B))'+B$
-\begin{table}[h]                                   \centering                                        \caption{Logical Truth table for expression S1} 
+\begin{table}[h]
+	\centering
+	\caption{Logical Truth table for expression s1}
 	\begin{tabular}{|c|c|c|}
 	\hline
 	A & B & (A'(A+B))'+B\\
@@ -234,14 +241,22 @@ Consider the propositional logic S2:\\
   S2: $q \longrightarrow (\neg{p}\land({p}\lor{q})) = \neg{q} \lor (\neg{p} \land ({p}\lor {q}))$
  The boolean expression for the proportional expression can be written as\\
  S2: $q \longrightarrow p'(p+q) = q'+p'(p+q)$
-\begin{table}[h]                                   \centering                                        \caption{Logical Truth table for expression S2}          \begin{tabular}{|c|c|c|}                          \hline                                            p & q & q'+p'(p+q)\\                              \hline                                            0 & 0 & 1\\
-        \hline
-        0 & 1 & 1\\
-        \hline                                            1 & 0 & 1\\
-        \hline
-        1 & 1 & 0\\
-        \hline
-  \end{tabular}
+\begin{table}[h]
+	\centering
+	\caption{Logical truth table for expression S2}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		p & q & q'+p'(p+q)\\
+		\hline
+		0 & 0 & 1\\
+		\hline
+		0 & 1 & 1\\
+		\hline
+		1 & 0 & 1\\
+		\hline
+		1 & 1 & 0\\
+		\hline
+	\end{tabular}
 \end{table}
 
 
